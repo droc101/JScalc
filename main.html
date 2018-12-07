@@ -1,0 +1,118 @@
+<html>
+
+  <head>
+  <link rel="icon" href="favicon.png" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    <title>JScalc</title>
+    <script>
+      function setup() {
+        var num1 = 0;
+        var num2 = 0;
+        var oper = '';
+        var answ = 0;
+      };
+
+      function get() {
+        num1 = prompt('Enter The First Number');
+        num2 = prompt('Enter The Second Number');
+        oper = prompt('Enter The Operation');
+      };
+
+      function test() {
+        setup();
+        get();
+      };
+
+      function calculate() {
+        if (oper == '+') {
+          //plus code
+          var num1num = Number(num1);
+          var num2num = Number(num2);
+          answ = num1num + num2num;
+          alert(answ);
+        } else if (oper == '-') {
+          //minus code
+          answ = num1 - num2;
+          alert(answ);
+        } else if (oper == '*') {
+          //times code
+          answ = num1 * num2;
+          alert(answ);
+        } else if (oper == '/') {
+          //divide code
+          answ = num1 / num2;
+          alert(answ);
+        } else {
+          alert('Error: 001 Invalid Operation');
+        }
+      }
+
+      setup();
+
+    </script>
+  </head>
+
+  <body style="font-family:comic sans ms">
+    <center>
+    <img src="top-logo.png" width="240" height="96">
+      <p style="font-family:comic sans ms">
+      A Calculator Made In Javascript!
+      </p>
+      <p style="font-family:comic sans ms">
+      Operations: +: Addition    -: Subtraction    *: Multiplication    /: Division
+      </p>
+    </center>
+    <center>
+      <h3 style="font-family:comic sans ms;">
+        By Droc101
+      </h3>
+    </center>
+    <center>
+      <p style="font-family:comic sans ms;">
+        Step 1:
+      </p>
+    </center>
+    <p>
+      <center><button type="button" onclick="get();">Set Up Calculator</button></center>
+
+    </p>
+    <center>
+      <p style="font-family:comic sans ms;">
+        Step 2:
+      </p>
+    </center>
+    <p>
+      <center><button type="button" onclick="calculate();">Calculate Answer</button></center>
+
+    </p>
+    <center>
+      <p style="font-family:comic sans ms;">
+        Information
+      </p>
+    </center>
+    <p>
+      <center><button type="button" onclick="alert('New Features: Fixed Addition Problem Bug, Added Favicon/Header Image');">New Features</button></center>
+
+    </p>
+    <p>
+    </p>
+
+    <strong><center><p style="font-family:comic sans ms;" >
+    Version 1.0.6
+    </p></center></strong>
+    <p>
+
+    </p>
+    <center>
+      <p style="font-family:comic sans ms;">
+        <a href="https://gist.github.com/droc101/945e05624d20ad75e97ad6b99ec43bac">See The code on Github</a>
+
+      </p>
+    </center>
+    <script>
+
+
+    </script>
+  </body>
+
+</html>
